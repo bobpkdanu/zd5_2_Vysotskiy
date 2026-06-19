@@ -1,0 +1,97 @@
+﻿ContentPage {
+    background-color: lavender;
+}
+
+StackLayout {
+    padding: 20;
+}
+
+Label {
+    font-size: 16;
+    color: white;
+}
+
+#header {
+    font-size: 28;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20;
+    text-align: center;
+}
+
+#subheader {
+    font-size: 18;
+    color: teal;
+    margin-bottom: 15;
+    text-align: center;
+}
+
+Entry {
+    background-color: darkgray;
+    border-color: cornflowerblue;
+    border-width: 1;
+    padding: 10;
+    margin-bottom: 10;
+    font-size: 16;
+    color: black;
+}
+
+Button {
+    background-color: mediumturquoise;
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+    padding: 12;
+    margin-top: 10;
+    border-radius: 5;
+}
+
+#signin-button {
+    background-color: saddlebrown;
+}
+
+#button-static {
+    background-color: green;
+    border-radius: 15;
+    color: white;
+}
+
+
+Picker {
+    background-color: darkgray;
+    margin-bottom: 10;
+}
+
+Slider {
+    margin: 10 0;
+    color: forestgreen;
+}
+
+.error {
+    color: red;
+    font-size: 14;
+}
+
+.success {
+    color: lawngreen;
+    font-size: 14;
+}
+
+#result-label {
+    font-size: 18;
+    font-weight: bold;
+    margin-top: 5;
+}
+
+.currency-card {
+    background-color: darkgray;
+    padding: 15;
+    margin: 5 0;
+    border-radius: 10;
+}
+
+DatePicker {
+    background-color: darkgray;
+    color: white;
+    padding: 10;
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd4_Vysotskiy.Page1"
+             Title="Кредитный калькулятор">
+    
+    <ContentPage.Resources>
+        <StyleSheet Source="/style1.css" />
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label StyleId="header" Text="Кредитный калькулятор" />
+
+            <Entry x:Name="sumEntry" Placeholder="Сумма кредита" Keyboard="Numeric" />
+            <Entry x:Name="monthEntry" Placeholder="Срок (месяцев)" Keyboard="Numeric" />
+
+            <Picker x:Name="typePicker" Title="Вид платежа">
+                <Picker.Items>
+                    <x:String>Аннуитетный</x:String>
+                    <x:String>Дифференцированный</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label x:Name="percentTitleLabel" Text="Процентная ставка" />
+            <Slider x:Name="percentSlider" MinimumTrackColor="LightGreen" MaximumTrackColor="GhostWhite" ThumbColor="White"/>
+            <Label x:Name="percentLabel" Text="5%" />
+            <Button x:Name="staticButton" Clicked="staticButton_Clicked" StyleId="button-static" Text="Получение информации"/>
+            <Label x:Name="payLabel" StyleId="result-label" Text="Ежемесячный платеж:" />
+            <Label x:Name="totalLabel" StyleId="result-label" Text="Общая сумма:" />
+            <Label x:Name="overpayLabel" StyleId="result-label" Text="Переплата:" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

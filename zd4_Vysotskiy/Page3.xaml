@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd4_Vysotskiy.Page3"
+             Title="Добро пожаловать">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/style1.css" />
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="15">
+            <Label 
+            Text="Добро пожаловать"
+            FontSize="30"
+            HorizontalOptions="Center"/>
+
+
+            <Entry
+            x:Name="LoginEntry"
+            Placeholder="Введите логин"/>
+
+
+            <Entry
+            x:Name="PasswordEntry"
+            Placeholder="Введите пароль"
+            IsPassword="True"/>
+
+
+            <Label
+            x:Name="ErrorLabel"
+            TextColor="Red"
+            IsVisible="False"/>
+
+
+            <Button
+                x:Name="signButton"
+            Text="Sign in"
+            StyleId="signin-button"
+            Clicked="SignIn_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

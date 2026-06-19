@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="zd4_Vysotskiy.Page2"
+             Title="Курсы валют">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/style1.css" />
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label StyleId="header" Text="Курсы валют" />
+
+            <Label Text="Центробанк РФ:" FontSize="20" Margin="0,20,0,10" />
+
+            <StackLayout StyleClass="currency-card">
+                <Label Text="USD 80.000" FontSize="18" />
+            </StackLayout>
+
+            <StackLayout StyleClass="currency-card">
+                <Label Text="EUR 86.000" FontSize="18" />
+            </StackLayout>
+
+            <Label Text="Выберите дату:" FontSize="18" Margin="0,20,0,5" />
+            <DatePicker x:Name="datePicker"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
